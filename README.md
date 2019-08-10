@@ -1,6 +1,8 @@
 # Yandex.Kassa Joinup
 
-Тестовое задание для Яндекс.Денег.
+Тестовое задание для Яндекс.Денег. 
+
+Разработано на основе whitepaper-stub https://github.com/whitepapertools/whitepaper-stub
 
 
 ## Установка
