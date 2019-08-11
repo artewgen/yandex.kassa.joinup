@@ -1,0 +1,13 @@
+.theme_control_kassa-default {
+    --color-control-bg-action: #00bf96;
+    --color-control-bg-action-hover: #00d6a8;
+    --color-control-bg-normal: #fff;
+    --color-control-bg-normal-hover: #f2f2f2;
+    --color-control-bg-disable: hsla(0, 0%, 100%, .12);
+    --color-control-typo-action: #fff;
+    --color-control-typo-action-hover: #fff;
+    --color-control-typo-normal: #000;
+    --color-control-typo-normal-hover: rgba(0, 0, 0, .6);
+    --color-control-typo-disable: hsla(0, 0%, 100%, .3);
+    --color-control-typo-placeholder: rgba(0, 0, 0, .3)
+}

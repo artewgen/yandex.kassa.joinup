@@ -1,0 +1,20 @@
+.page {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: var(--color-bg-default);
+    -webkit-font-smoothing: antialiased
+}
+
+.page,
+html {
+    width: 100vw
+}
+
+.page a {
+    text-decoration: none
+}
+
+.page a:hover .text_view_link {
+    color: var(--color-link-hover)
+}

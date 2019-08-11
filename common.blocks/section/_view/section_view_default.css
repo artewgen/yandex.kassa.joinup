@@ -1,0 +1,19 @@
+.section_view_default {
+    --bright-mod: 1.45;
+    --shade-mod: 0.6;
+    --color-bg-section: var(--color-bg-default);
+    position: relative;
+    background: var(--color-bg-section)
+}
+
+.section_view_default:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100vw;
+    height: 100%;
+    margin: 0 -50vw;
+    background: var(--color-bg-section);
+    z-index: -1
+}

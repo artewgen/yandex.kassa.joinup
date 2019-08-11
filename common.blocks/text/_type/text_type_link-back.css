@@ -1,0 +1,17 @@
+.text_type_link-back {
+    position: relative;
+    display: inline-block;
+    transform: translateX(var(--space-xl))
+}
+
+.text_type_link-back:before {
+    content: "←";
+    position: absolute;
+    right: calc(100% + var(--space-s));
+    transform: translateX(var(--space-xxs));
+    transition: transform .3s ease
+}
+
+.text_type_link-back:hover:before {
+    transform: translateX(0)
+}

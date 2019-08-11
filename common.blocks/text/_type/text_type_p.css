@@ -1,0 +1,10 @@
+.text_type_p {
+    margin: 15px 0 21px;
+    line-height: 25px;
+    margin-top: 0;
+    line-height: var(--line-height-typo-m)
+}
+
+.text_type_p:last-child {
+    margin-bottom: 0
+}

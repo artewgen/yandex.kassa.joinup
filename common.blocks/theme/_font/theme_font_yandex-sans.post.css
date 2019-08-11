@@ -1,0 +1,51 @@
+@font-face {
+    font-family: Yandex Sans Text Web;
+    src: url(fonts/Yandex_Sans_Text-Thin.eot);
+    src: url(fonts/Yandex_Sans_Text-Thin.eot?#iefix) format("embedded-opentype"), url(fonts/Yandex_Sans_Text-Thin.woff2) format("woff2"), url(fonts/Yandex_Sans_Text-Thin.woff) format("woff"), url(fonts/Yandex_Sans_Text-Thin.ttf) format("truetype"), url(fonts/Yandex_Sans_Text-Thin.svg#YandexSansText-Thin) format("svg");
+    font-weight: 100;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Yandex Sans Text Web;
+    src: url(fonts/Yandex_Sans_Text-Light.eot);
+    src: url(fonts/Yandex_Sans_Text-Light.eot?#iefix) format("embedded-opentype"), url(fonts/Yandex_Sans_Text-Light.woff2) format("woff2"), url(fonts/Yandex_Sans_Text-Light.woff) format("woff"), url(fonts/Yandex_Sans_Text-Light.ttf) format("truetype"), url(fonts/Yandex_Sans_Text-Light.svg#YandexSansText-Light) format("svg");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Yandex Sans Text Web;
+    src: url(fonts/Yandex_Sans_Text-Regular.eot);
+    src: url(fonts/Yandex_Sans_Text-Regular.eot?#iefix) format("embedded-opentype"), url(fonts/Yandex_Sans_Text-Regular.woff2) format("woff2"), url(fonts/Yandex_Sans_Text-Regular.woff) format("woff"), url(fonts/Yandex_Sans_Text-Regular.ttf) format("truetype"), url(fonts/Yandex_Sans_Text-Regular.svg#YandexSansText-Regular) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Yandex Sans Text Web;
+    src: url(fonts/Yandex_Sans_Text-Regular_Italic.eot);
+    src: url(fonts/Yandex_Sans_Text-Regular_Italic.eot?#iefix) format("embedded-opentype"), url(fonts/Yandex_Sans_Text-Regular_Italic.woff2) format("woff2"), url(fonts/Yandex_Sans_Text-Regular_Italic.woff) format("woff"), url(fonts/Yandex_Sans_Text-Regular_Italic.ttf) format("truetype"), url(fonts/Yandex_Sans_Text-Regular_Italic.svg#YandexSansText-RegularItalic) format("svg");
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: Yandex Sans Text Web;
+    src: url(fonts/Yandex_Sans_Text-Medium.eot);
+    src: url(fonts/Yandex_Sans_Text-Medium.eot?#iefix) format("embedded-opentype"), url(fonts/Yandex_Sans_Text-Medium.woff2) format("woff2"), url(fonts/Yandex_Sans_Text-Medium.woff) format("woff"), url(fonts/Yandex_Sans_Text-Medium.ttf) format("truetype"), url(fonts/Yandex_Sans_Text-Medium.svg#YandexSansText-Medium) format("svg");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Yandex Sans Text Web;
+    src: url(fonts/Yandex_Sans_Text-Bold.eot);
+    src: url(fonts/Yandex_Sans_Text-Bold.eot?#iefix) format("embedded-opentype"), url(fonts/Yandex_Sans_Text-Bold.woff2) format("woff2"), url(fonts/Yandex_Sans_Text-Bold.woff) format("woff"), url(fonts/Yandex_Sans_Text-Bold.ttf) format("truetype"), url(fonts/Yandex_Sans_Text-Bold.svg#YandexSansText-Bold) format("svg");
+    font-weight: 700;
+    font-style: normal
+}
+
+.theme_font_yandex-sans {
+    font-family: var(--font-sans)
+}

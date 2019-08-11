@@ -1,0 +1,10 @@
+.text_view_link {
+    color: var(--color-link);
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s ease
+}
+
+.text_view_link:hover {
+    color: var(--color-link-hover)
+}

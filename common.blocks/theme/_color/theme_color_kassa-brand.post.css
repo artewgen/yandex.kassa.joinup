@@ -1,0 +1,66 @@
+$color-bg-brand: #0070f0;
+$color-bg-action: #3d98ff;
+$color-bg-selection: #8fc5ff;
+$color-bg-hover: #57a5ff;
+$color-bg-border: rgba(0,0,0,.12);
+$color-bg-stripe: rgba(0,0,0,.04);
+$color-bg-ghost: #fbfcfe;
+$color-bg-default: #0e1930;
+$color-bg-tone: rgba(0,0,0,.9);
+$color-bg-soft: rgba(14,25,48,.97);
+$color-bg-success: #00bf96;
+$color-bg-alert: #ff3352;
+$color-bg-warning: #f90;
+$color-bg-normal: #dde3e5;
+$color-bg-system: #778a9b;
+$color-bg-dark: #0d1d3f;
+$color-bg-medium: #1a3d89;
+$color-bg-link: rgba(50,241,177,.4);
+$color-bg-section: #0e1930;
+$color-typo-brand: #0070f0;
+$color-typo-primary: #fff;
+$color-typo-promo: hsla(0,0%,100%,.8);
+$color-typo-secondary: hsla(0,0%,100%,.85);
+$color-typo-ghost: hsla(0,0%,100%,.3);
+$color-typo-disable: hsla(0,0%,100%,.3);
+$color-typo-success: #00bf96;
+$color-typo-warning: #f90;
+$color-typo-alert: #f33;
+$color-link: #00dbac;
+$color-link-external: #00dbac;
+$color-link-minor: #0070f0;
+$color-link-hover: hsla(0,0%,100%,.85);
+
+
+.theme_color_kassa-brand{
+    /* Цвета блоков */
+    --color-bg-brand: $color-bg-brand; /* Цвет фона брендированый */
+    --color-bg-border: $color-bg-border; /* Цвет границ */
+    --color-bg-stripe: $color-bg-stripe; /* Цвет зебры */
+    --color-bg-ghost: $color-bg-ghost; /* Цвет затенения */
+    --color-bg-default: $color-bg-default; /* Цвет дефолта */
+    --color-bg-tone: $color-bg-tone; /* Цвет паранджи */
+    --color-bg-soft: $color-bg-soft; /* Цвет молока */
+    --color-bg-success: $color-bg-success; /* Цвет успеха */
+    --color-bg-alert: $color-bg-alert; /* Цвет ошибки */
+    --color-bg-warning: $color-bg-warning; /* Цвет предупреждения */
+    --color-bg-normal: $color-bg-normal; /* Цвет нейтральный */
+    --color-bg-system: $color-bg-system; /* Цвет системнный */
+    --color-bg-link: $color-bg-link; /* Цвет фона ссылки */
+
+    /* Цвета текста */
+    --color-typo-brand: $color-typo-brand; /* Цвет брендового текста */
+    --color-typo-primary: $color-typo-primary; /* Цвет основного текста */
+    --color-typo-secondary: $color-typo-secondary; /* Цвет второстепенного текста */
+    --color-typo-ghost: $color-typo-ghost; /* Цвет дополнительного текста */
+    --color-typo-disable: $color-typo-disable; /* Цвет неактивного текста */
+    --color-typo-success: $color-typo-success; /* Цвет текста успеха */
+    --color-typo-warning: $color-typo-warning; /* Цвет текста предупреждения */
+    --color-typo-alert: $color-typo-alert; /* Цвет текста ошибки */
+
+    /* Цвета ссылок */
+    --color-link: $color-link; /* Цвет основной ссылки */
+    --color-link-external: $color-link-external; /* Цвет дополнительной ссылки */
+    --color-link-minor: $color-link-minor; /* Цвет второстепенной ссылки */
+    --color-link-hover: $color-link-hover; /* Цвет ховера ссылки */
+}

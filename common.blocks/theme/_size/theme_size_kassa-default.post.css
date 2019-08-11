@@ -1,0 +1,40 @@
+.theme_size_kassa-default {
+    --size-typo-xs: 11px;
+    --size-typo-s: 13px;
+    --size-typo-m: 17px;
+    --size-typo-l: 19px;
+    --size-typo-xl: 29px;
+    --size-typo-xxl: 37px;
+    --size-typo-xxxl: 42px;
+    --size-typo-xxxxl: 47px;
+    --size-typo-xxxxxl: 61px;
+    --line-height-typo-xs: 13px;
+    --line-height-typo-s: 21px;
+    --line-height-typo-m: 28px;
+    --line-height-typo-l: 28px;
+    --line-height-typo-xl: 40px;
+    --line-height-typo-xxl: 47px;
+    --line-height-typo-xxxl: 53px;
+    --line-height-typo-xxxxl: 59px;
+    --line-height-typo-xxxxxl: 73px
+}
+
+@media screen and (min-width:1024px) {
+    .theme_size_kassa-default {
+        --size-typo-xxl: 42px;
+        --size-typo-xxxl: 47px;
+        --size-typo-xxxxl: 61px;
+        --line-height-typo-xxl: 53px;
+        --line-height-typo-xxxl: 59px;
+        --line-height-typo-xxxxl: 67px
+    }
+}
+
+@media screen and (max-width:720px) {
+    .theme_size_kassa-default {
+        --size-typo-xxxxl: 29px;
+        --size-typo-xxxl: 29px;
+        --line-height-typo-xxxxl: 40px;
+        --line-height-typo-xxxl: 40px
+    }
+}

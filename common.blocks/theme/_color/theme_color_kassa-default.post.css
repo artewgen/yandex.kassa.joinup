@@ -1,0 +1,32 @@
+.theme_color_kassa-default {
+    --color-bg-brand: #0070f0;
+    --color-bg-action: #3d98ff;
+    --color-bg-selection: #8fc5ff;
+    --color-bg-hover: #57a5ff;
+    --color-bg-border: rgba(0, 0, 0, .12);
+    --color-bg-stripe: rgba(0, 0, 0, .04);
+    --color-bg-ghost: #f7f7f7;
+    --color-bg-default: #fff;
+    --color-bg-tone: rgba(0, 0, 0, .9);
+    --color-bg-soft: hsla(0, 0%, 100%, .97);
+    --color-bg-success: #00bf96;
+    --color-bg-alert: #f33;
+    --color-bg-warning: #f90;
+    --color-bg-normal: #dde3e5;
+    --color-bg-system: #778a9b;
+    --color-bg-link: rgba(52, 229, 170, .4);
+    --color-bg-section: #fff;
+    --color-typo-brand: #0070f0;
+    --color-typo-primary: #000;
+    --color-typo-promo: rgba(0, 0, 0, .8);
+    --color-typo-secondary: rgba(0, 0, 0, .6);
+    --color-typo-ghost: rgba(0, 0, 0, .3);
+    --color-typo-disable: rgba(0, 0, 0, .3);
+    --color-typo-success: #00bf96;
+    --color-typo-warning: #f90;
+    --color-typo-alert: #f33;
+    --color-link: #0ac79e;
+    --color-link-external: #0ac79e;
+    --color-link-minor: #0070f0;
+    --color-link-hover: rgba(0, 0, 0, .6)
+}

@@ -1,0 +1,36 @@
+.medallion {
+    font-family: var(--font-sans);
+    font-face: var(--font-sans);
+    position: relative;
+    vertical-align: middle;
+    z-index: 1;
+    padding: 0 var(--space-s);
+    line-height: var(--space-xl);
+}
+.medallion {
+    display: inline-block;
+    height: var(--space-xl);
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 var(--space-s);
+    overflow: hidden;
+    border-radius: 99em;
+    font-size: var(--size-typo-s);
+    font-weight: 500;
+    font-face: "Yandex Sans Text Web",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.medallion:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 99em
+}
+
+
+

@@ -1,0 +1,16 @@
+.header {
+    padding-top: var(--space-m);
+    color: var(--color-typo-primary)
+}
+@media screen and (min-width:720px) {
+    .header {
+        position: fixed;
+        width: 100%;
+        box-sizing: border-box;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        padding: 0 var(--gap);
+        background: var(--color-bg-default)
+    }
+}
