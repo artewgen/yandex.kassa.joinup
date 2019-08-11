@@ -1,14 +1,12 @@
-.medallion_view_success {
+.badge_view_success {
     color: var(--color-typo-primary);
     font-weight: 700
 }
 
-.medallion_view_success:before {
+.badge_view_success:before {
     opacity: .15
 }
-
-
-.medallion_view_success:before {
+.badge_view_success:before {
     background: var(--color-bg-success);
     opacity: 1;
     z-index: -1

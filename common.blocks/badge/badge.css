@@ -1,4 +1,4 @@
-.medallion {
+.badge {
     font-family: var(--font-sans);
     font-face: var(--font-sans);
     position: relative;
@@ -7,7 +7,7 @@
     padding: 0 var(--space-s);
     line-height: var(--space-xl);
 }
-.medallion {
+.badge {
     display: inline-block;
     height: var(--space-xl);
     max-width: 100%;
@@ -22,7 +22,7 @@
     text-overflow: ellipsis;
 }
 
-.medallion:before {
+.badge:before {
     content: "";
     position: absolute;
     left: 0;

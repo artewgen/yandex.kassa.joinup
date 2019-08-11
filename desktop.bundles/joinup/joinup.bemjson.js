@@ -77,7 +77,7 @@ module.exports = {
                             ],
                             content: [
                                 {
-                                    block: 'medallion',
+                                    block: 'badge',
                                     mods: {view: 'success'},
                                     mix: [
                                         {
@@ -114,15 +114,100 @@ module.exports = {
                                     ]
                                 },
                                 {
+                                    block: 'tpl-grid',
+                                    mods: {'s-columns': 6, 'm-columns': 12, 'col-gap': 'third', 'row-gap': 'third', 'vertical-align': 'center'},
+                                    mix: {
+                                        block: 'decorator',
+                                        mods: {'indent-b': 'm'}
+                                    },
+                                    content: [
+                                        {
+                                            elem: 'fraction',
+                                            elemMods: {'s-col': 3, 'm-col': 6},
+                                            mix: {
+                                                block: 'tpl_grid__item',  /* костыльчик */
+                                            },
+                                            content: [
+                                                {
+                                                    block: 'text',
+                                                    mods: {'size': 's', view: 'secondary'},
+                                                    mix: {
+                                                        block: 'decorator',
+                                                        mods: {'indent-b': 'xs'}
+                                                    },
+                                                    content: 'Место регистрации'
+                                                },
+                                                {
+                                                    block: 'radio-button',
+                                                    mods: {theme: 'kassa'},
+                                                    mix: {
+                                                        block: 'tpl-grid',
+                                                        mods: {'s-columns': 6}
+                                                    },
+                                                    content: [
+                                                        {
+                                                            elem: 'radio',
+                                                            elemMods: {checked: 'yes', side: 'left'},
+                                                            mix: {
+                                                                block: 'tpl-grid__fraction',
+                                                                mods: {'s-col': 3}
+                                                            },
+                                                            tag: 'label',
+                                                            content: [
+                                                                {
+                                                                    elem: 'text',
+                                                                    tag: 'span',
+                                                                    content: 'Россия'
+                                                                },
+                                                                {
+                                                                    elem: 'control',
+                                                                    attrs: {value: true, checked: 'checked', type: 'radio', name: 'residentRadio'},
+                                                                    tag: 'input'
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            elem: 'radio',
+                                                            elemMods: {side: 'right'},
+                                                            mix: {
+                                                                block: 'tpl-grid__fraction',
+                                                                mods: {'s-col': 3}
+                                                            },
+                                                            tag: 'label',
+                                                            content: [
+                                                                {
+                                                                    elem: 'text',
+                                                                    tag: 'span',
+                                                                    content: 'Заграница'
+                                                                },
+                                                                {
+                                                                    elem: 'control',
+                                                                    attrs: {value: false, type: 'radio', name: 'residentRadio'},
+                                                                    tag: 'input'
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            //pt-form__item decorator decorator_indent-b_xl
+                                            elem: 'item',
+                                            mix: {
+                                                block: 'decorator',
+                                                mods: {'indent-b': 'xl'}
+                                            }
+                                        }]
+                                },
+                                {
                                     elem: 'item',
                                     elemMods: {'vertical-align': 'center', distribute: 'right'},
                                     mix: {
                                         block: 'decorator',
-                                        mods: {'indent-b': 'l'}
+                                        mods: {'indent-b': 'l', 'indent-t': 'xxxl'}
                                     },
                                     content: {
-                                        //button button_theme_kassa button_size_m button_view_action application-form__button application-form__button_check_inn button__control i-bem button_js_inited button__control_js_inited
-
                                         block: 'button',
                                         mods: {theme: 'kassa', size: 'm', view: 'action', js: 'inited'},
                                         mix: {
@@ -141,13 +226,11 @@ module.exports = {
                                     }
                                 },
                                 {
-                                   //'text text_size_s text_view_ghost text_display_inline'
                                     block: 'text',
                                     mods: {'size': 's', view: 'ghost', display: 'inline'},
                                     content: [
                                         'Нажимая «Продолжить», вы принимаете ',
                                         {
-                                            //text text_size_s text_view_link-minor
                                             block: 'text',
                                             mods: {view: 'link-subtle'},
                                             tag: 'a',

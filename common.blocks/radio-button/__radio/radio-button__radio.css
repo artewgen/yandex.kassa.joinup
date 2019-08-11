@@ -1,0 +1,27 @@
+.radio-button__radio{
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    margin: 0 -1px 0 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    outline: 0;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+}
+.radio-button__radio:after,
+.radio-button__radio:before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+}
+
+

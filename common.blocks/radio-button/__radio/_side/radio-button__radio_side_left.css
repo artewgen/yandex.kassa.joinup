@@ -1,0 +1,5 @@
+.radio-button__radio_side_left,
+.radio-button__radio_side_left:before {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}

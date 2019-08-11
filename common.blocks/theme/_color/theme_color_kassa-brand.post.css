@@ -17,6 +17,8 @@ $color-bg-dark: #0d1d3f;
 $color-bg-medium: #1a3d89;
 $color-bg-link: rgba(50,241,177,.4);
 $color-bg-section: #0e1930;
+$color-bg-radio-select: rgba(50,241,177,.2);
+$color-bg-radio-select-hover: rgba(50,241,177,.1);
 $color-typo-brand: #0070f0;
 $color-typo-primary: #fff;
 $color-typo-promo: hsla(0,0%,100%,.8);
