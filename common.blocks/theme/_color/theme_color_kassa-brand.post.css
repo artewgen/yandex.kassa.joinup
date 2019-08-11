@@ -29,6 +29,8 @@ $color-typo-alert: #f33;
 $color-link: #00dbac;
 $color-link-external: #00dbac;
 $color-link-minor: #0070f0;
+$color-link-subtle: rgba(0,0,0,.6);
+$color-link-subtle-hover: $color-link-minor;
 $color-link-hover: hsla(0,0%,100%,.85);
 
 
@@ -62,5 +64,7 @@ $color-link-hover: hsla(0,0%,100%,.85);
     --color-link: $color-link; /* Цвет основной ссылки */
     --color-link-external: $color-link-external; /* Цвет дополнительной ссылки */
     --color-link-minor: $color-link-minor; /* Цвет второстепенной ссылки */
+    --color-link-subtle: $color-link-subtle; /* Цвет второстепенной ссылки */
+    --color-link-subtle-hover: $color-link-subtle-hover; /* Цвет второстепенной ссылки */
     --color-link-hover: $color-link-hover; /* Цвет ховера ссылки */
 }

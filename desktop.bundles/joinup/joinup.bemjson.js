@@ -100,6 +100,59 @@ module.exports = {
                                             mods: {type: 'h3', 'size': 'l', weight: 'bold', view: 'primary'},
                                             tag: 'h3',
                                             content: 'Заполненние данных об организации'
+                                        },
+                                        {
+                                            block: 'text',
+                                            mods: {type: 'p', size: 'm', weight: 'regular'},
+                                            mix: {
+                                                block: 'decorator',
+                                                mods: {'indent-t': 's', 'indent-b': 'xl'}
+                                            },
+                                            tag: 'p',
+                                            content: 'Чтобы использовать Кассу, нужно зарегистрироваться в налоговой. Мы проверим регистрацию по ИНН и подключим вас.'
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'item',
+                                    elemMods: {'vertical-align': 'center', distribute: 'right'},
+                                    mix: {
+                                        block: 'decorator',
+                                        mods: {'indent-b': 'l'}
+                                    },
+                                    content: {
+                                        //button button_theme_kassa button_size_m button_view_action application-form__button application-form__button_check_inn button__control i-bem button_js_inited button__control_js_inited
+
+                                        block: 'button',
+                                        mods: {theme: 'kassa', size: 'm', view: 'action', js: 'inited'},
+                                        mix: {
+                                            block: 'application-form',
+                                            bem: 'falsy',
+                                            mods: {check: 'inn'},
+
+                                        },
+
+                                        tag: 'button',
+                                        content: {
+                                            block: 'button__text',
+                                            tag: 'span',
+                                            content: 'Продолжить'
+                                        }
+                                    }
+                                },
+                                {
+                                   //'text text_size_s text_view_ghost text_display_inline'
+                                    block: 'text',
+                                    mods: {'size': 's', view: 'ghost', display: 'inline'},
+                                    content: [
+                                        'Нажимая «Продолжить», вы принимаете ',
+                                        {
+                                            //text text_size_s text_view_link-minor
+                                            block: 'text',
+                                            mods: {view: 'link-subtle'},
+                                            tag: 'a',
+                                            attrs: {href: '#'},
+                                            content: 'условия использования личного кабинета'
                                         }
                                     ]
                                 }

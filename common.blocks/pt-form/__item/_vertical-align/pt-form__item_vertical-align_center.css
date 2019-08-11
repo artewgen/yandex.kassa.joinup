@@ -1,0 +1,6 @@
+.pt-form__item_vertical-align_center {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center
+}

@@ -1,0 +1,26 @@
+.button_theme_kassa .button__text {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    transition: .3s ease
+}
+.button_theme_kassa.button_disabled .button__text {
+    color: var(--color-control-typo-disable)
+}
+.button_theme_kassa.button_size_s .button__text {
+    margin: 0 var(--space-l)
+}
+.button_theme_kassa.button_size_m .button__text {
+    margin: 0 var(--space-xl)
+}
+.button_theme_kassa.button_size_l .button__text {
+    margin: 0 var(--space-xxl)
+}
+.button_theme_kassa .icon+.button__text {
+    margin-left: 0
+}
+.button_theme_kassa .button__text:not(:last-child) {
+    margin-right: 0
+}

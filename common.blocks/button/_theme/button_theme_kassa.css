@@ -1,0 +1,306 @@
+.button_theme_kassa {
+    font-family: var(--font-sans), Helvetica Neue, Helvetica, Arial, sans-serif;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: var(--color-control-typo-normal);
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: 0;
+    background: var(--color-control-bg-normal);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .24);
+    transform: scale(1);
+    transition: box-shadow .2s ease, background .2s linear, transform .1s ease;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+.button_theme_kassa::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+
+
+
+.button_theme_kassa .icon {
+    position: relative
+}
+
+.button_theme_kassa.button_type_link {
+    text-decoration: none
+}
+
+.button_theme_kassa.button_hovered {
+    cursor: pointer;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .16)
+}
+
+.button_theme_kassa.button_focused-hard,
+.button_theme_kassa.button_hovered {
+    background: var(--color-control-bg-normal-hover);
+    color: var(--color-control-typo-normal-hover)
+}
+
+.button_theme_kassa.button_focused-hard {
+    z-index: 1;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .16), inset 0 0 0 2px var(--color-control-bg-action)
+}
+
+.button_theme_kassa.button_pressed {
+    transform: scale(.96)
+}
+
+.button_theme_kassa.button_checked {
+    background: var(--color-control-bg-action)!important;
+    color: var(--color-control-typo-action)!important
+}
+
+.button_theme_kassa.button_checked:before {
+    background: #ffeba0
+}
+
+.button_theme_kassa.button_checked.button_pressed {
+    background: rgba(129, 103, 0, .6)
+}
+
+.button_theme_kassa.button_checked.button_pressed:before {
+    background: #fee481
+}
+
+.button_theme_kassa.button_checked.button_hovered {
+    background: rgba(129, 103, 0, .6)
+}
+
+.button_theme_kassa.button_view_clear {
+    color: var(--color-control-typo-normal);
+    background: none;
+    box-shadow: none
+}
+
+.button_theme_kassa.button_view_clear.button_hovered {
+    color: var(--color-control-typo-normal-hover)
+}
+
+.button_theme_kassa.button_view_clear.button_pressed {
+    transform: scale(.96)
+}
+
+.button_theme_kassa.button_view_clear.button_focused-hard {
+    color: var(--color-control-typo-normal-hover);
+    box-shadow: inset 0 0 0 2px var(--color-control-bg-action)
+}
+
+.button_theme_kassa.button_view_clear.button_checked {
+    background: #ffeba0
+}
+
+.button_theme_kassa.button_view_clear.button_checked.button_pressed {
+    background: #fee481
+}
+
+.button_theme_kassa.button_view_clear.button_disabled {
+    background: none
+}
+
+.button_theme_kassa.button_view_action {
+    background: var(--color-control-bg-action);
+    color: var(--color-control-typo-action)
+}
+
+.button_theme_kassa.button_view_action:before {
+    display: none
+}
+
+.button_theme_kassa.button_view_action.button_hovered {
+    background: var(--color-control-bg-action-hover);
+    color: var(--color-control-typo-action-hover);
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .16)
+}
+
+.button_theme_kassa.button_view_action.button_focused-hard {
+    background: var(--color-control-bg-action-hover);
+    color: var(--color-control-typo-action-hover);
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .16), inset 0 0 0 2px var(--color-control-bg-normal)
+}
+
+.button_theme_kassa.button_view_plain {
+    background: none;
+    color: var(--color-link);
+    box-shadow: none
+}
+
+.button_theme_kassa.button_view_plain:before {
+    display: none
+}
+
+.button_theme_kassa.button_view_plain.button_focused-hard,
+.button_theme_kassa.button_view_plain.button_hovered {
+    background: none;
+    color: var(--color-link-hover);
+    box-shadow: none
+}
+
+.button_theme_kassa.button_view_pseudo {
+    color: var(--color-control-typo-normal);
+    background: hsla(0, 0%, 100%, .1)
+}
+
+.button_theme_kassa.button_view_pseudo.button_focused-hard,
+.button_theme_kassa.button_view_pseudo.button_hovered {
+    color: var(--color-control-typo-normal-hover);
+    background: hsla(0, 0%, 100%, .2)
+}
+
+.button_theme_kassa.button_togglable_radio {
+    box-shadow: none;
+    color: var(--color-control-typo-normal);
+    background: var(--color-bg-border)
+}
+
+.button_theme_kassa.button_togglable_radio:after {
+    content: "";
+    z-index: -1;
+    display: block;
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+    background: var(--color-control-bg-normal);
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity .2s linear
+}
+
+.button_theme_kassa.button_togglable_radio.button_width_max {
+    width: 100%
+}
+
+.button_theme_kassa.button_togglable_radio.button_pressed {
+    transform: scale(1)
+}
+
+.button_theme_kassa.button_togglable_radio.button_checked {
+    background: var(--color-bg-border)!important;
+    color: var(--color-control-typo-normal)!important
+}
+
+.button_theme_kassa.button_togglable_radio.button_checked:after {
+    opacity: 1
+}
+
+.button_theme_kassa.button_togglable_radio.button_hovered {
+    color: var(--color-control-typo-normal-hover)
+}
+
+.button_theme_kassa.button_disabled {
+    background: var(--color-control-bg-disable);
+    box-shadow: none
+}
+
+.button_theme_kassa.button_disabled:before {
+    display: none
+}
+
+.button_theme_kassa.button_disabled.button_checked {
+    background: var(--color-control-bg-disable)
+}
+
+
+
+.button_theme_kassa.button_disabled .icon {
+    opacity: .3
+}
+
+.button_theme_kassa.button_size_s {
+    margin-right: var(--space-m);
+    font-size: var(--size-typo-s);
+    line-height: 32px
+}
+
+.button_theme_kassa.button_size_s:last-of-type {
+    margin-right: 0
+}
+
+.button_theme_kassa.button_size_s:first-of-type {
+    margin-left: 0
+}
+
+.button_theme_kassa.button_size_s .icon {
+    position: relative;
+    top: var(--space-xxs);
+    width: auto;
+    margin-right: var(--space-xs);
+    margin-left: var(--space-xs)
+}
+
+
+
+.button_theme_kassa.button_size_m {
+    margin-right: var(--space-l);
+    font-size: var(--size-typo-m);
+    line-height: 40px
+}
+
+.button_theme_kassa.button_size_m:last-of-type {
+    margin-right: 0
+}
+
+.button_theme_kassa.button_size_m:first-of-type {
+    margin-left: 0
+}
+
+.button_theme_kassa.button_size_m .icon {
+    position: relative;
+    top: var(--space-xxxs);
+    width: auto;
+    margin-right: var(--space-xs);
+    margin-left: var(--space-xl)
+}
+
+
+
+.button_theme_kassa.button_size_l {
+    margin-right: var(--space-xl);
+    font-size: var(--size-typo-l);
+    line-height: 48px
+}
+
+.button_theme_kassa.button_size_l:last-of-type {
+    margin-right: 0
+}
+
+.button_theme_kassa.button_size_l:first-of-type {
+    margin-left: 0
+}
+
+.button_theme_kassa.button_size_l .icon {
+    margin-right: var(--space-s)
+}
+
+
+
+.button_theme_kassa.button_margin_false {
+    margin-right: 1px
+}
+
+.button_theme_kassa.button_margin_false:last-of-type {
+    margin-right: var(--space-l)
+}
+
+.button_theme_kassa.button_with_caption .button__caption {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    margin-top: var(--space-m);
+    color: var(--color-typo-secondary);
+    font-size: var(--size-typo-s);
+    line-height: var(--line-height-typo-s)
+}

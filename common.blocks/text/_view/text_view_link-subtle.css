@@ -1,0 +1,10 @@
+.text_view_link-subtle {
+    color: var(--color-link-subtle);
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s ease
+}
+
+.text_view_link-subtle:hover {
+    color: var(--color-link-subtle-hover)
+}
