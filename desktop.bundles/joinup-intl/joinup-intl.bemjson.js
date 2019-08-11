@@ -6,11 +6,11 @@ module.exports = {
     head: [
         { elem: 'meta', attrs: { name: 'description', content: '' } },
         { elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' } },
-        { elem: 'css', url: 'joinup.min.css' },
+        { elem: 'css', url: 'joinup-intl.min.css' },
         { elem: 'css', url : "smz-application.min.css"},
         { elem: 'js', url: 'https://code.jquery.com/jquery-3.2.1.js' },
     ],
-    scripts: [{ elem: 'js', url: 'joinup.min.js' }],
+    scripts: [{ elem: 'js', url: 'joinup-intl.min.js' }],
     mix: {
         block: 'theme',
         mods: { color: 'kassa-brand', space: 'kassa-default', size: 'kassa-default', gap: 'kassa-default', control: 'kassa-brand', breakpoint: 'kassa', font: 'yandex-sans'}
@@ -157,7 +157,7 @@ module.exports = {
                                                     content: [
                                                         {
                                                             elem: 'radio',
-                                                            elemMods: {checked: 'yes', side: 'left'},
+                                                            elemMods: {side: 'left'},
                                                             mix: {
                                                                 block: 'tpl-grid__fraction',
                                                                 mods: {'s-col': 3}
@@ -178,7 +178,7 @@ module.exports = {
                                                         },
                                                         {
                                                             elem: 'radio',
-                                                            elemMods: {side: 'right'},
+                                                            elemMods: {checked: 'yes', side: 'right'},
                                                             mix: {
                                                                 block: 'tpl-grid__fraction',
                                                                 mods: {'s-col': 3}
@@ -221,53 +221,99 @@ module.exports = {
                                             content: {
                                                 block: '',
                                                 tag: 'span',
-                                                content: 'Название компании или ИНН'
+                                                content: 'Страна'
                                             }
                                         },
                                         {
 
                                             block: 'input',
                                             mods: {theme: 'kassa', size: 'l'},
-                                            mix: {
-                                                block: 'decorator',
-                                                mods: {'indent-b': 's'}
-                                            },
-                                            placeholder: 'Начните писать название, ИНН или ФИО директора',
+                                            val: 'Беларусь',
+                                            placeholder: 'Выберите вашу страну',
                                         },
 
+                                    ]
+                                },
+                                {
+                                    block: 'tpl-grid',
+                                    mods: {'s-columns': 6, 'm-columns': 12, 'col-gap': 'third', 'row-gap': 'third', 'vertical-align': 'center'},
+                                    mix: {
+                                        block: 'decorator',
+                                        mods: {'indent-b': 'xl'}
+                                    },
+                                    content:
                                         {
-                                            block: 'company-information-suggest',
+                                            // unit block radiobuttons
+                                            elem: 'fraction',
+                                            elemMods: {'s-col': 3, 'm-col': 6},
+                                            mix: {
+                                                block: 'tpl_grid__item',  /* костыльчик */
+                                            },
                                             content: [
                                                 {
-                                                    elem: 'row',
+                                                    block: 'text',
+                                                    mods: {'size': 's', view: 'secondary'},
+                                                    mix: {
+                                                        block: 'decorator',
+                                                        mods: {'indent-b': 'xs'}
+                                                    },
+                                                    content: 'Тип организации'
+                                                },
+                                                {
+                                                    block: 'radio-button',
+                                                    mods: {theme: 'kassa'},
+                                                    mix: {
+                                                        block: 'tpl-grid',
+                                                        mods: {'s-columns': 6}
+                                                    },
                                                     content: [
                                                         {
-                                                            elem: 'address',
-                                                            mix: [
+                                                            elem: 'radio',
+                                                            elemMods: {checked: 'yes', side: 'left'},
+                                                            mix: {
+                                                                block: 'tpl-grid__fraction',
+                                                                mods: {'s-col': 3}
+                                                            },
+                                                            tag: 'label',
+                                                            content: [
                                                                 {
-                                                                    block: 'text',
-                                                                    mods: {size: 's', view: 'secondary'},
+                                                                    elem: 'text',
+                                                                    tag: 'span',
+                                                                    content: 'Юрлицо'
                                                                 },
                                                                 {
-                                                                    block: 'decorator',
-                                                                    mods: {'indent-r': 'l'}
+                                                                    elem: 'control',
+                                                                    attrs: {value: true, checked: 'checked', type: 'radio', name: 'residentRadio'},
+                                                                    tag: 'input'
                                                                 }
-                                                            ],
-                                                            content: 'Ставропольский край, г Невинномысск, ул.Скорины, д 3'
+                                                            ]
                                                         },
                                                         {
-                                                            elem: 'inn',
+                                                            elem: 'radio',
+                                                            elemMods: {side: 'right'},
                                                             mix: {
-                                                                block: 'text',
-                                                                mods: {size: 's'},
+                                                                block: 'tpl-grid__fraction',
+                                                                mods: {'s-col': 3}
                                                             },
-                                                            content: 'ИНН 2631012682'
+                                                            tag: 'label',
+                                                            content: [
+                                                                {
+                                                                    elem: 'text',
+                                                                    tag: 'span',
+                                                                    content: 'ИП'
+                                                                },
+                                                                {
+                                                                    elem: 'control',
+                                                                    attrs: {value: false, type: 'radio', name: 'residentRadio'},
+                                                                    tag: 'input'
+                                                                }
+                                                            ]
                                                         }
                                                     ]
-                                                },
+                                                }
                                             ]
                                         }
-                                    ]
+
                                 },
 
                                 {
