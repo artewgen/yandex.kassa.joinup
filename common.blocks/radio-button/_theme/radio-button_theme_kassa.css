@@ -13,10 +13,11 @@
     line-height: 40px;
     padding: 0 var(--space-s);
     border: 2px solid var(--color-bg-border);
-    transition: box-shadow .2s ease,background .2s linear;
+    transition: border-width .2s ease, border-radius .3s ease, box-shadow .2s ease, background .2s linear;
 }
 .radio-button_theme_kassa .radio-button__radio:hover{
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .16);
+    border-radius: 5px ;
 }
 
 
@@ -45,9 +46,24 @@
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
 }
-.radio-button_theme_kassa .radio-button__radio_side_left:not(.radio-button__radio_checked_yes){
-    border-right: 0;
+@media screen and (min-width:$screen-s){
+    .radio-button_theme_kassa .radio-button__radio_side_left:not(.radio-button__radio_checked_yes){
+        border-right: 0;
+    }
+    .radio-button_theme_kassa .radio-button__radio_side_right:not(.radio-button__radio_checked_yes){
+        border-left: 0;
+    }
 }
-.radio-button_theme_kassa .radio-button__radio_side_right:not(.radio-button__radio_checked_yes){
-    border-left: 0;
+
+
+@media screen and (max-width:$screen-xs-max) {
+    .radio-button_theme_kassa .radio-button__radio{
+        border-radius: 0;
+    }
+    .radio-button_theme_kassa .radio-button__radio:first-child{
+        border-radius: 4px 4px 0 0;
+    }
+    .radio-button_theme_kassa .radio-button__radio:last-child{
+        border-radius: 0 0 4px 4px;
+    }
 }

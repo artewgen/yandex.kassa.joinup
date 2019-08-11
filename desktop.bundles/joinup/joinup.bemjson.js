@@ -49,7 +49,6 @@ module.exports = {
                             content: 'Вернуться'
                         },
                         {
-                            //block: 'text text_type_h1 text_short_default decorator decorator_indent-b_l text_size_xxl text_weight_bold text_view_primary',
                             block: 'text',
                             mods: {type: 'h1', short: 'default', size: 'xxl', weight: 'bold', view: 'primary'},
                             mix: {
@@ -109,7 +108,17 @@ module.exports = {
                                                 mods: {'indent-t': 's', 'indent-b': 'xl'}
                                             },
                                             tag: 'p',
-                                            content: 'Чтобы использовать Кассу, нужно зарегистрироваться в налоговой. Мы проверим регистрацию по ИНН и подключим вас.'
+                                            content: [
+                                                'Чтобы использовать Кассу, нужно зарегистрировать организацию в налоговой. Если у вас нет юрлица, подключите ',
+                                                {
+                                                    block: 'text',
+                                                    mods: {view: 'link-subtle'},
+                                                    tag: 'a',
+                                                    attrs: {href: '#'},
+                                                    content: 'Яндекс.Кассу для самозанятых'
+                                                },
+                                                '.'
+                                            ]
                                         }
                                     ]
                                 },
@@ -118,10 +127,11 @@ module.exports = {
                                     mods: {'s-columns': 6, 'm-columns': 12, 'col-gap': 'third', 'row-gap': 'third', 'vertical-align': 'center'},
                                     mix: {
                                         block: 'decorator',
-                                        mods: {'indent-b': 'm'}
+                                        mods: {'indent-b': 'xl'}
                                     },
-                                    content: [
+                                    content:
                                         {
+                                            // resident block radiobuttons
                                             elem: 'fraction',
                                             elemMods: {'s-col': 3, 'm-col': 6},
                                             mix: {
@@ -190,16 +200,76 @@ module.exports = {
                                                     ]
                                                 }
                                             ]
-                                        },
+                                        }
+
+                                },
+                                {
+
+                                    elem: 'item',
+                                    mix: {
+                                        block: 'decorator',
+                                        mods: {'indent-b': 'xl'}
+                                    },
+                                    content: [
                                         {
-                                            //pt-form__item decorator decorator_indent-b_xl
-                                            elem: 'item',
+                                            block: 'text',
+                                            mods: {size: 's', view: 'secondary'},
                                             mix: {
                                                 block: 'decorator',
-                                                mods: {'indent-b': 'xl'}
+                                                mods: {'indent-b': 'xs'}
+                                            },
+                                            content: {
+                                                block: '',
+                                                tag: 'span',
+                                                content: 'Название компании или ИНН'
                                             }
-                                        }]
+                                        },
+                                        {
+
+                                            block: 'input',
+                                            mods: {theme: 'kassa', size: 'l'},
+                                            mix: {
+                                                block: 'decorator',
+                                                mods: {'indent-b': 's'}
+                                            },
+                                            placeholder: 'Начните писать название, ИНН или ФИО директора',
+                                        },
+
+                                        {
+                                            block: 'company-information-suggest',
+                                            content: [
+                                                {
+                                                    elem: 'row',
+                                                    content: [
+                                                        {
+                                                            elem: 'address',
+                                                            mix: [
+                                                                {
+                                                                    block: 'text',
+                                                                    mods: {size: 's', view: 'secondary'},
+                                                                },
+                                                                {
+                                                                    block: 'decorator',
+                                                                    mods: {'indent-r': 'l'}
+                                                                }
+                                                            ],
+                                                            content: 'Ставропольский край, г Невинномысск, Пятигорское шоссе, д 3'
+                                                        },
+                                                        {
+                                                            elem: 'inn',
+                                                            mix: {
+                                                                block: 'text',
+                                                                mods: {size: 's'},
+                                                            },
+                                                            content: 'ИНН 2631012682'
+                                                        }
+                                                    ]
+                                                },
+                                            ]
+                                        }
+                                    ]
                                 },
+
                                 {
                                     elem: 'item',
                                     elemMods: {'vertical-align': 'center', distribute: 'right'},

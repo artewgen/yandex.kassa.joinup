@@ -66,7 +66,7 @@ $color-link-hover: hsla(0,0%,100%,.85);
     --color-link: $color-link; /* Цвет основной ссылки */
     --color-link-external: $color-link-external; /* Цвет дополнительной ссылки */
     --color-link-minor: $color-link-minor; /* Цвет второстепенной ссылки */
-    --color-link-subtle: $color-link-subtle; /* Цвет второстепенной ссылки */
-    --color-link-subtle-hover: $color-link-subtle-hover; /* Цвет второстепенной ссылки */
+    --color-link-subtle: $color-link-subtle; /* Цвет второстепенной серой ссылки */
+    --color-link-subtle-hover: $color-link-subtle-hover; /* Цвет ховера второстепенной серой ссылки */
     --color-link-hover: $color-link-hover; /* Цвет ховера ссылки */
 }
