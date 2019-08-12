@@ -1,0 +1,42 @@
+.user__icon{
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: #fff center no-repeat;
+    background-size: cover;
+}
+
+.user-accounts__add-account .user__icon{
+    position: relative;
+    box-sizing: border-box;
+    border: 2px solid var(--color-bg-border);
+    background: #fff;
+
+}
+.user-accounts__add-account .user__icon:after,
+.user-accounts__add-account .user__icon:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 3px;
+    height: 20px;
+    border-radius: 2px;
+    background: #777;
+    transform: translate(-50%, -50%);
+    transition: background-color .2s ease;
+}
+.user-accounts__add-account .user__icon:before{
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.user-accounts__add-account:hover .user__icon:after,
+.user-accounts__add-account:hover .user__icon:before{
+
+    background: var(--color-control-bg-action);
+}
+
+

@@ -304,3 +304,7 @@
     font-size: var(--size-typo-s);
     line-height: var(--line-height-typo-s)
 }
+
+.button_theme_kassa.button_type_prev{
+    margin-right: auto;
+}

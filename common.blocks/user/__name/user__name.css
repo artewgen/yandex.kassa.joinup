@@ -1,0 +1,10 @@
+.user__name{
+    color: var(--color-typo-primary);
+}
+
+.user-accounts__add-account .user__name{
+    transition: color .2s ease;
+}
+.user-accounts__add-account:hover .user__name{
+    color: var(--color-link);
+}
