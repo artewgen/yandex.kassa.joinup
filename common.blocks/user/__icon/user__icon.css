@@ -1,8 +1,8 @@
 .user__icon{
     position: relative;
     display: inline-block;
-    width: 48px;
-    height: 48px;
+    width: 64px;
+    height: 64px;
     vertical-align: middle;
     border-radius: 50%;
     background: #fff center no-repeat;
@@ -12,7 +12,8 @@
 .user-accounts__add-account .user__icon{
     position: relative;
     box-sizing: border-box;
-    border: 2px solid var(--color-bg-border);
+    width: 20px;
+    height: 20px;
     background: #fff;
 
 }
@@ -23,7 +24,7 @@
     top: 50%;
     left: 50%;
     width: 3px;
-    height: 20px;
+    height: 16px;
     border-radius: 2px;
     background: #777;
     transform: translate(-50%, -50%);

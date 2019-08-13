@@ -1,3 +1,9 @@
-.company-information-suggest__address{
+@media screen and (max-width:$screen-s){
+    .company-information-suggest__address{
+        line-height: var(--line-height-typo-sx);
 
+    }
+    .dropdown-menu__item .company-information-suggest__address{
+        margin-top: 4px;
+    }
 }

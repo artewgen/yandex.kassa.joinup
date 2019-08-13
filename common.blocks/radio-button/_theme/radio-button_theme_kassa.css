@@ -1,8 +1,8 @@
 .radio-button_theme_kassa.radio-button{
     width: 100%;
-    -webkit-box-shadow: 0 2px 6px 0 rgba(0,0,0,.24);
-    box-shadow: 0 2px 6px 0 rgba(0,0,0,.24);
-    transition: box-shadow .2s ease;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.1);
+    background: transparent;
+    transition: transform .2s ease, box-shadow .2s ease;
     border-radius: 4px;
 }
 .radio-button_theme_kassa.radio-button:hover{
@@ -12,12 +12,13 @@
     font-size: var(--size-typo-l);
     line-height: 40px;
     padding: 0 var(--space-s);
-    border: 2px solid var(--color-bg-border);
+    border: 1.5px solid var(--color-bg-border);
     transition: border-width .2s ease, border-radius .3s ease, box-shadow .2s ease, background .2s linear;
 }
 .radio-button_theme_kassa .radio-button__radio:hover{
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .16);
     border-radius: 5px ;
+    transform: scale(1.01);
 }
 
 
@@ -32,6 +33,7 @@
 .radio-button_theme_kassa .radio-button__radio:not(.radio-button__radio_checked_yes):hover{
     background: var(--color-control-bg-normal-hover);
     color: var(--color-control-typo-normal-hover);
+
 }
 
 

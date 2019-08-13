@@ -1,0 +1,5 @@
+@media screen and (max-width:$screen-s){
+    .company-information-suggest{
+        white-space: normal;
+    }
+}

@@ -1,6 +1,7 @@
 .theme_size_kassa-default {
     --size-typo-xs: 11px;
     --size-typo-s: 13px;
+    --size-typo-sm: 15px;
     --size-typo-m: 17px;
     --size-typo-l: 19px;
     --size-typo-xl: 29px;
@@ -10,6 +11,7 @@
     --size-typo-xxxxxl: 61px;
     --line-height-typo-xs: 13px;
     --line-height-typo-s: 21px;
+    --line-height-typo-sm: 21px;
     --line-height-typo-m: 28px;
     --line-height-typo-l: 28px;
     --line-height-typo-xl: 40px;

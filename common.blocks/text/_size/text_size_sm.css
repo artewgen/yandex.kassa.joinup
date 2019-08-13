@@ -1,0 +1,4 @@
+.text_size_sm {
+    font-size: var(--size-typo-sm);
+    line-height: var(--line-height-typo-sm)
+}

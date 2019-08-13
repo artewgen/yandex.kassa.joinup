@@ -16,3 +16,38 @@ $font-mono: monospace;
     --font-serif: $font-serif;
     --font-mono: $font-mono;
 }
+:root {
+    --gap: 20px;
+    --col-gap-third: calc(var(--gap) * 0.33);
+    --col-gap-half: calc(var(--gap) * 0.5);
+    --col-gap-two-thirds: calc(var(--gap) * 0.66);
+    --col-gap-full: var(--gap);
+    --col-gap-2x: calc(var(--gap) * 2);
+    --col-gap-3x: calc(var(--gap) * 3);
+}
+:root {
+    --shadow-default: 0 4px 32px 0px rgba(0, 65, 141, .16), 0 12px 20px -12px rgba(0, 0, 0, .5);
+    --shadow-default-hover: 0 4px 32px 0px rgba(0, 65, 141, .16), 0 12px 20px -12px rgba(0, 0, 0, .5);
+    --shadow-sticky: 0 4px 20px 0px rgba(0, 65, 141, .05), 0 12px 20px -16px rgba(0, 0, 0, .1);
+    --font-sans: "Yandex Sans Text Web", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-serif: Georgia, serif;
+    --font-mono: monospace;
+}
+
+@media screen and (min-width:720px) {
+    :root {
+        --gap: 40px
+    }
+}
+
+@media screen and (min-width:1024px) {
+    :root {
+        --gap: 48px
+    }
+}
+
+@media screen and (min-width:1280px) {
+    :root {
+        --gap: 72px
+    }
+}

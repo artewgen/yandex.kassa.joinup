@@ -243,10 +243,13 @@
 
 
 
-.button_theme_kassa.button_size_m {
+.button_theme_kassa.button_size_m{
     margin-right: var(--space-l);
     font-size: var(--size-typo-m);
     line-height: 40px
+}
+.button_theme_kassa.button_size_m.application-form_check_back{
+    margin-right: auto;
 }
 
 .button_theme_kassa.button_size_m:last-of-type {

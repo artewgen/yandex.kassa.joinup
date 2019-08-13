@@ -1,0 +1,7 @@
+.footer {
+    position: relative;
+    padding: 68px var(--col-gap-full);
+    overflow: hidden;
+    color: var(--color-typo-primary);
+    background: var(--color-bg-default);
+}
