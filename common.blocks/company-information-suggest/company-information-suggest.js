@@ -4,7 +4,7 @@ modules.define('company-information-suggest_view_sub', ['i-bem-dom'], function(p
             onSetMod : {
                 'js' : {
                     'inited' : function() {
-                        console.log('company-information-suggest');
+
 
                     }
                 }

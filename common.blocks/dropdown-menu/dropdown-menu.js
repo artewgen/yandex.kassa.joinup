@@ -4,7 +4,7 @@ modules.define('dropdown-menu', ['i-bem-dom'], function(provide, bemDom) {
             onSetMod : {
                 'js' : {
                     'inited' : function() {
-                        console.log('dropdown-menu');
+
 
                     }
                 }

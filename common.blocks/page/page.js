@@ -4,7 +4,7 @@ modules.define('page', ['i-bem-dom'], function(provide, bemDom) {
             onSetMod : {
                 'js' : {
                     'inited' : function() {
-                        console.log('page-init');
+
 
                     }
                 }

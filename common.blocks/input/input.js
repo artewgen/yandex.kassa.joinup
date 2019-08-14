@@ -7,7 +7,7 @@ modules.define('input', ['i-bem-dom'], function(provide, bemDom) {
 
                         var inputWrap = $(this.domElem[0]);
 
-                        console.log(inputWrap);
+
 
                         inputWrap.find('.input__control').on('blur', function() {
                             if ($(this).val()!='') {

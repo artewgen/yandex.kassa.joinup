@@ -103,7 +103,7 @@ module.exports = {
                                             block: 'text',
                                             mods: {type: 'h3', 'size': 'l', weight: 'bold', view: 'primary'},
                                             tag: 'h3',
-                                            content: 'Заполненние данных об организации'
+                                            content: 'Заполнение данных об организации'
                                         },
                                         {
                                             block: 'text',
@@ -969,7 +969,7 @@ module.exports = {
                                             block: 'text',
                                             mods: {type: 'h3', 'size': 'l', weight: 'bold', view: 'primary'},
                                             tag: 'h3',
-                                            content: 'Выбор аккаунта для работы с Яндекс.Кассой'
+                                            content: 'Выбор аккаунта и заполнение контактов'
                                         },
                                         {
                                             block: 'text',
@@ -980,7 +980,7 @@ module.exports = {
                                             },
                                             tag: 'p',
                                             content: [
-                                                'Выберите аккаунт и введите данные для связи с вами. Будьте внимательны, вы не сможете вернуться и поменять аккаунт.'
+                                                'Касса будет привязана к выбранному аккаунту. Вы не сможете вернуться и поменять его.'
                                             ]
                                         }
                                     ]
@@ -1093,6 +1093,31 @@ module.exports = {
                                                 ]
                                         },
                                     ]
+                                },
+                                /*
+                                {
+                                    block: 'text',
+                                    mods: {type: 'h3', 'size': 'l', weight: 'bold', view: 'primary'},
+                                    mix:  {
+                                        block: 'decorator',
+                                        mods: {'indent-b': 'm', 'indent-t': 'l'}
+                                    },
+                                    tag: 'h3',
+                                    content: 'Заполнение данных для связи с вами'
+                                },*/
+                                {
+
+                                    block: 'text',
+                                    mods: {type: 'p', size: 'm', weight: 'regular'},
+                                    mix: {
+                                        block: 'decorator',
+                                        mods: {'indent-t': 'l', 'indent-b': 'm'}
+                                    },
+                                    tag: 'p',
+                                    content: [
+                                        'С вами свяжется менеджер по поводу подключения. Проверьте контактные данные.'
+                                    ]
+
                                 },
                                 {
 
@@ -1247,7 +1272,7 @@ module.exports = {
                                             block: 'text',
                                             mods: {view: 'link-subtle'},
                                             tag: 'a',
-                                            attrs: {href: '#'},
+                                            attrs: {href: 'https://money.yandex.ru/page?id=523050'},
                                             content: 'условия использования кабинета'
                                         }
                                     ]

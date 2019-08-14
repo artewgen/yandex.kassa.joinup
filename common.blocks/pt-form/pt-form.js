@@ -4,7 +4,7 @@ modules.define('pt-form', ['i-bem-dom'], function(provide, bemDom) {
             onSetMod : {
                 'js' : {
                     'inited' : function() {
-                        console.log('pt-form');
+
 
                     }
                 }

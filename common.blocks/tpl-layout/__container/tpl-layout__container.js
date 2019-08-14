@@ -4,7 +4,7 @@ modules.define('tpl-layout__container', ['i-bem-dom', 'pt-form','button', 'input
             onSetMod : {
                 'js' : {
                     'inited' : function() {
-                        console.log('init-tp-form-layout');
+
 
                         this._buttons = this.findChildBlocks({block: Button});
                         this._forms = this.findChildBlocks({block: Form});
@@ -19,7 +19,7 @@ modules.define('tpl-layout__container', ['i-bem-dom', 'pt-form','button', 'input
                             formSecondElement = formEntries[1].domElem,
                             inputElements = [];
 
-                        console.log(resElement);
+
 
                         for(var i=0; i<inputEntries.length; i++){
                             
@@ -38,8 +38,7 @@ modules.define('tpl-layout__container', ['i-bem-dom', 'pt-form','button', 'input
                                     var error = false,
                                         residentBlock = $('.pt-form__resident-section');
 
-                                    console.log(residentBlock.hasClass('hidden'));
-                                    console.log(residentBlock);
+
 
                                     if (inputElements['suggest'].find('.input__control').val()!='' || residentBlock.hasClass('hidden')){
                                         formFirstElement.hide();
