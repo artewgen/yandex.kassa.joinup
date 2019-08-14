@@ -28,7 +28,12 @@ modules.define('pt-form__non-resident-section', ['i-bem-dom', 'input', 'dropdown
                                inputSelectorElem.find('.input__control').val($(event.target).text());
                                $(event.target).parent().siblings().removeClass('active');
                                $(event.target).parent().addClass('active');
+
+                               event.preventDefault();
+
                            }
+
+
                         });
                         function modalChangeState(state) {
                             if (state == 'show'){

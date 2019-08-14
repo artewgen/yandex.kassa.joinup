@@ -10,7 +10,9 @@ modules.define('input', ['i-bem-dom'], function(provide, bemDom) {
 
 
                         inputWrap.find('.input__control').on('blur', function() {
-                            if ($(this).val()!='') {
+
+                            if ($(this).val() !='' ) {
+
                                 inputWrap.removeClass('error');
                             }
                         });

@@ -37,6 +37,7 @@ modules.define('pt-form__resident-section', ['i-bem-dom', 'dropdown-menu','input
 
                             inputElement.find('.input__control').val(element.attr('name'));
                             dropdownElement.hide();
+                            inputElement.removeClass('error');
                             addInputClear();
 
                             return false;

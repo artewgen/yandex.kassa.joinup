@@ -1,7 +1,7 @@
 module.exports = {
     block: 'page',
     title: 'Яндекс.Касса: Заявка на подключение',
-    favicon: '/favicon.ico',
+    favicon: 'favicon.ico',
     lang: 'ru',
     head: [
         { elem: 'meta', attrs: { name: 'description', content: '' } },
@@ -905,7 +905,7 @@ module.exports = {
                                     elemMods: {'vertical-align': 'center', distribute: 'right', type: 'actions'},
                                     mix: {
                                         block: 'decorator',
-                                        mods: {'indent-b': 'l', 'indent-t': 'xxxl'}
+                                        mods: {'indent-t': 'xxxl'}
                                     },
                                     content: {
                                         block: 'button',
@@ -1111,7 +1111,7 @@ module.exports = {
                                     mods: {type: 'p', size: 'm', weight: 'regular'},
                                     mix: {
                                         block: 'decorator',
-                                        mods: {'indent-t': 'l', 'indent-b': 'm'}
+                                        mods: {'indent-t': 'xl', 'indent-b': 'xs'}
                                     },
                                     tag: 'p',
                                     content: [
